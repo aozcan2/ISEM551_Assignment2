@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -25,6 +26,11 @@ namespace ISEM551_Assignment2.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult DisplayDataWithLayers(){
+            var _BusData = BusinessLayerClass.GetDatafromBusinessLayer();
+            return View(_BusData);
         }
     }
 }

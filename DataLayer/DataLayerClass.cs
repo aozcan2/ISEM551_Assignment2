@@ -19,7 +19,7 @@ namespace DataLayer
 
             var _connStr = ConfigurationManager.ConnectionStrings["BookDbContext"].ConnectionString;
             conn = new SqlConnection(_connStr);
-            query = "select * from dbo.books";
+            query = "select [book_id], [book_name], [author], [type], [link], [added_by_id], [date] from dbo.books";
 
             //Open the connection
             conn.Open();

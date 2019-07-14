@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Model.ModelClass>
+
+@{
+    ViewBag.Title = "DisplayDataWithLayers";
+}
+
+<h2>Books in Database</h2>
+
+
+<p>This data coming from custom layers that are created for Assingnment 2!</p>
+
+<div class="table-responsive table-dark">
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr class="row table-info">
+                <th class="col-xl-4 text-nowrap" scope="row">
+                    @Html.DisplayNameFor(model => model.book_name)
+                </th>
+                <th class="col-xl-3">
+                    @Html.DisplayNameFor(model => model.author)
+                </th>
+                <th class="col-xl-3 text-nowrap">
+                    @Html.DisplayNameFor(model => model.type)
+                </th>
+                <th class="col-xl-2">
+                    @Html.DisplayNameFor(model => model.link)
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr class="row table-info">
+                    <td class="col-xl-4 text-nowrap">
+                        @Html.DisplayFor(modelItem => item.book_name)
+                    </td>
+                    <td class="col-xl-3">
+                        @Html.DisplayFor(modelItem => item.author)
+                    </td>
+                    <td class="col-xl-3 text-nowrap">
+                        @Html.DisplayFor(modelItem => item.type)
+                    </td>
+                    <td class="col-xl-2">
+                        <a href=@Html.DisplayFor(modelItem => item.link) target="_blank">@Html.DisplayFor(modelItem => item.link)</a>
+                    </td>
+                </tr>
+            }
+        </thead>
+    </table>
+</div>
