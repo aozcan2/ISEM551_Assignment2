@@ -19,7 +19,7 @@ namespace ISEM551_Assignment2.Models
         public string type { get; set; }
         public byte[] cover_img { get; set; }
         public string link { get; set; }
-        public string added_by { get; set; }
+        public string added_by_id { get; set; }
         public string date { get; set; }
     }
 
