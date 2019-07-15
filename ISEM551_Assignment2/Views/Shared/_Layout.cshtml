@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - ISEM 551 Assignments</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -12,17 +12,23 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar bg-primary"></span>
+                    <span class="icon-bar bg-primary"></span>
+                    <span class="icon-bar bg-primary"></span>
                 </button>
-                @Html.ActionLink("Free e-Books", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <div class="navbar-header">
+                    <a class="navbar-brand nav-link">
+                        <img alt="Brand" class="img-responsive" src="~/Resources/images/ebook_logo.png"
+                                   style="max-width:50px; margin-top:-15px;" />
+                        @Html.ActionLink("Free e-Books", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </a>
+                </div>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Books", "DisplayDataWithLayers", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="nav-link bg-light">@Html.ActionLink("Books", "DisplayDataWithLayers", "Home")</li>
+                    <li class="nav-link">@Html.ActionLink("About", "About", "Home")</li>
+                    <li class="nav-link">@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Users", "Index", "Users")</li>
@@ -34,7 +40,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; 2019 - ISEM 551 Assignment 2 by Ayhan Özcan</p>
         </footer>
     </div>
 

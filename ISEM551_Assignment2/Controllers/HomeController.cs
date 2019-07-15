@@ -16,15 +16,12 @@ namespace ISEM551_Assignment2.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
+            ViewData["Message"] = "You can get in touch with me via:";
             return View();
         }
 
