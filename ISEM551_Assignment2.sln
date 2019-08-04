@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISEM551_Assignment2", "ISEM551_Assignment2\ISEM551_Assignment2.csproj", "{C38574E0-778A-4025-9AA4-DBDEB9369AA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISEM551_Assignment3", "ISEM551_Assignment2\ISEM551_Assignment3.csproj", "{C38574E0-778A-4025-9AA4-DBDEB9369AA6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{AAAC11DF-427E-40C5-8B2B-D9B8EE74D31A}"
 EndProject
