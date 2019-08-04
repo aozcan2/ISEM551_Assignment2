@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="59664445-20dd-494a-86a1-729e758a8537" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61833/WCFApp.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCFApp.wsdl" MetadataType="Wsdl" ID="4bbbf905-9010-460c-84c9-53ddd916a03e" SourceId="1" SourceUrl="http://localhost:61833/WCFApp.svc?wsdl" />
+    <MetadataFile FileName="WCFApp.xsd" MetadataType="Schema" ID="740b2d76-a3fc-45b8-af49-f9ebead3b8e0" SourceId="1" SourceUrl="http://localhost:61833/WCFApp.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCFApp1.xsd" MetadataType="Schema" ID="f5d583e5-cbd9-4385-8947-3c86643b9ae4" SourceId="1" SourceUrl="http://localhost:61833/WCFApp.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCFApp.disco" MetadataType="Disco" ID="5c746124-6eb5-4060-87d7-a516629ddfcc" SourceId="1" SourceUrl="http://localhost:61833/WCFApp.svc?disco" />
+    <MetadataFile FileName="WCFApp2.xsd" MetadataType="Schema" ID="eb776684-6b18-4b9f-a121-df071f3e5993" SourceId="1" SourceUrl="http://localhost:61833/WCFApp.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

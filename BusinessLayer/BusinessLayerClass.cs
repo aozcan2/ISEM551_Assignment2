@@ -13,7 +13,9 @@ namespace BusinessLayer
             var _list = new List<ModelClass>();
             DataSet _buslayerDataSet = new DataSet();
 
-            _buslayerDataSet = DataLayerClass.GetDatafromDB();
+            //_buslayerDataSet = DataLayerClass.GetDatafromDB();
+            var _Service = new WCFService.ServiceInterfaceClient();
+            _buslayerDataSet = _Service.GetDatafromDB();
 
 
             if(_buslayerDataSet != null){
